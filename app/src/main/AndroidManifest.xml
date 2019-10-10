@@ -9,8 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OptionActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SensorOptionActivity"
+            android:label="@string/title_activity_sensor_option"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SensorActivity"
+            android:label="@string/title_activity_sensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectActivity"
+            android:label="@string/title_activity_select">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
