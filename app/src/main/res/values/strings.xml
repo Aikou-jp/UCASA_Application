@@ -6,4 +6,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_sensor">SensorActivity</string>
     <string name="title_activity_sensor_option">SensorOptionActivity</string>
+    <string name="edit_message">Enter a message</string>
 </resources>

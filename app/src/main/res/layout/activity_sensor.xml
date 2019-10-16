@@ -104,6 +104,7 @@
             android:id="@+id/button"
             android:layout_width="400dp"
             android:layout_height="52dp"
+            android:onClick="changeSensorOptionActivity"
             android:text="追加のオプション"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
