@@ -10,14 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ServiceActivity"
+            android:label="@string/title_activity_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".RuleActivity"
+            android:label="@string/title_activity_rule"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".SensorOptionActivity"
             android:label="@string/title_activity_sensor_option"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SensorActivity"
             android:label="@string/title_activity_sensor"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".SelectActivity"/>
+            android:parentActivityName=".SelectActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SelectActivity"
             android:label="@string/title_activity_select">

@@ -1,6 +1,5 @@
 package com.example.ucasa_application;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,14 +11,12 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import static android.content.Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
-
-public class SensorActivity extends AppCompatActivity {
+public class ServiceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sensor);
+        setContentView(R.layout.activity_service);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -28,11 +25,6 @@ public class SensorActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
     }
 
-    public void changeSensorOptionActivity(View view) {
-        // Do something in response to button
-        Intent intent = new Intent(this, SensorOptionActivity.class);
-        startActivity(intent);
-    }
     // Toolbarのアイテムがタップされた場合に呼ばれる
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

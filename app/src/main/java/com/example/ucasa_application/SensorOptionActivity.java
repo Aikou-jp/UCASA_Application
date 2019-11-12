@@ -25,6 +25,8 @@ public class SensorOptionActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
     }
 
+
+
     // Toolbarのアイテムがタップされた場合に呼ばれる
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

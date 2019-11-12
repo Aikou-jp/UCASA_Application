@@ -1,10 +1,30 @@
 <resources>
     <string name="app_name">UCASA_Application</string>
-    <string name="title_activity_select">SelectActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_sensor">SensorActivity</string>
-    <string name="title_activity_sensor_option">SensorOptionActivity</string>
+    <string name="title_activity_select">ホーム</string>
+    <string name="title_home">センサー</string>
+    <string name="title_dashboard">ルール</string>
+    <string name="title_notifications">サービス</string>
+    <string name="title_activity_sensor">センサー設定</string>
+    <string name="title_activity_sensor_option">センサーオプション</string>
     <string name="edit_message">Enter a message</string>
+    <string name="title_activity_rule">ルール設定</string>
+
+    <string-array name="rule">
+        <item>温度が低い</item>
+        <item>温度が高い</item>
+        <item>雨が降っている</item>
+        <item>ドアが開いた</item>>
+    </string-array>
+    <string name="title_activity_service">サービス設定</string>
+    <string-array name="service">
+        <item>電気を消す</item>
+        <item>エアコンの温度を上げる</item>
+        <item>エアコンの温度を下げる</item>
+        <item>傘を忘れていないか通知する</item>>
+    </string-array>
+    <string-array name="rule_name">
+        <item>帰宅</item>
+        <item>外出</item>
+        <item>雨で帰宅している</item>
+    </string-array>
 </resources>

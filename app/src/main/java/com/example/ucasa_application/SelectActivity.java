@@ -1,5 +1,6 @@
 package com.example.ucasa_application;
 
+import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import static android.content.Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
 
 public class SelectActivity extends AppCompatActivity {
 
@@ -34,6 +37,17 @@ public class SelectActivity extends AppCompatActivity {
     public void changeSensorActivity(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, SensorActivity.class);
+        startActivity(intent);
+    }
+
+    public void changeRuleActivity(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, RuleActivity.class);
+        startActivity(intent);
+    }
+    public void changeServiceActivity(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, ServiceActivity.class);
         startActivity(intent);
     }
 
