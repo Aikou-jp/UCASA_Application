@@ -35,7 +35,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ルール名"
+            android:text="コンテキスト名"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.173"
@@ -80,14 +80,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.443" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:entries="@array/rule"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.563" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:entries="@array/rule"
-        app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -2,20 +2,19 @@
     <string name="app_name">UCASA_Application</string>
     <string name="title_activity_select">ホーム</string>
     <string name="title_home">センサー</string>
-    <string name="title_dashboard">ルール</string>
-    <string name="title_notifications">サービス</string>
+    <string name="title_dashboard">コンテキスト</string>
+    <string name="title_notifications">サービスルール</string>
     <string name="title_activity_sensor">センサー設定</string>
     <string name="title_activity_sensor_option">センサーオプション</string>
     <string name="edit_message">Enter a message</string>
-    <string name="title_activity_rule">ルール設定</string>
-
+    <string name="title_activity_rule">コンテキスト作成</string>
     <string-array name="rule">
         <item>温度が低い</item>
         <item>温度が高い</item>
         <item>雨が降っている</item>
         <item>ドアが開いた</item>>
     </string-array>
-    <string name="title_activity_service">サービス設定</string>
+    <string name="title_activity_service">コンテキスト作成</string>
     <string-array name="service">
         <item>電気を消す</item>
         <item>エアコンの温度を上げる</item>
