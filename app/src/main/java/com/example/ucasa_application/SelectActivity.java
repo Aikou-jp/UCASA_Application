@@ -15,9 +15,17 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.ArrayList;
+
 import static android.content.Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
 
 public class SelectActivity extends AppCompatActivity {
+
+    public static UsersServiceInfo usersServiceInfo;
+
+    public static UsersServiceInfo getUsersServiceInfo() {
+        return usersServiceInfo;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,18 @@ public class SelectActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+        /*ArrayList data = new ArrayList<>();
+        data.add("サービス");
+        if(usersServiceInfo.name != null) {
+            data.add(usersServiceInfo.getName());
+        }
+
+        // リスト項目とListViewを対応付けるArrayAdapterを用意する
+        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
+
+        // ListViewにArrayAdapterを設定する
+        ListView listView = (ListView)findViewById(R.id.serviceListView);
+        listView.setAdapter(adapter);*/
     }
     /** Called when the user taps the Send button */
     public void changeSensorActivity(View view) {

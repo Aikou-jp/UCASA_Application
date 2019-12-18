@@ -14,7 +14,7 @@
         <item>雨が降っている</item>
         <item>ドアが開いた</item>>
     </string-array>
-    <string name="title_activity_service">コンテキスト作成</string>
+    <string name="title_activity_service">サービスルール作成</string>
     <string-array name="service">
         <item>電気を消す</item>
         <item>エアコンの温度を上げる</item>
