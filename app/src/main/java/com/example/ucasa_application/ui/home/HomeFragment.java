@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,6 +20,24 @@ import com.example.ucasa_application.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
+    /*@Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        String[] Data = {
+                "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+                "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+                "U", "V", "W", "X", "Y", "Z"
+        };
+
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<String>(
+                        getActivity(),
+                        android.R.layout.simple_list_item_1,
+                        Data);
+
+        setListAdapter(adapter);
+    }*/
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
