@@ -1,9 +1,13 @@
 package com.example.ucasa_application;
 
 public class UsersServiceInfo {
-    String name;
+    private String name;
     private String context;
     private String service;
+
+    public UsersServiceInfo(){
+        this.name = "　　";
+    }
 
     public String getName() {
         return name;

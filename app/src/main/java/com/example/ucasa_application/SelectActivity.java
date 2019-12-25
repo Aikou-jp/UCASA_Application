@@ -25,11 +25,8 @@ import static android.content.Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS;
 
 public class SelectActivity extends AppCompatActivity {
 
-    public static UsersServiceInfo usersServiceInfo;
+    public static UsersServiceInfo usersServiceInfo = new UsersServiceInfo();
 
-    public static UsersServiceInfo getUsersServiceInfo() {
-        return usersServiceInfo;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,28 +43,26 @@ public class SelectActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_home:
-
-
-                        ListView listView = findViewById(R.id.serviceListView);
-
-                        getLayoutInflater().inflate(R.layout.fragment_home, listView);
-                        return true;
-                    case R.id.navigation_dashboard:
-                        return true;
-                    case R.id.navigation_notifications:
-                        return true;
-                }
-                return false;
-            }
-        });
+//        navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()) {
+//                    case R.id.navigation_home:
+//
+//
+//                        ListView listView = findViewById(R.id.serviceListView);
+//
+//                        getLayoutInflater().inflate(R.layout.fragment_home, listView);
+//                        return true;
+//                    case R.id.navigation_dashboard:
+//                        return true;
+//                    case R.id.navigation_notifications:
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
     }
-
-
 
     /** Called when the user taps the Send button */
     public void changeSensorActivity(View view) {
